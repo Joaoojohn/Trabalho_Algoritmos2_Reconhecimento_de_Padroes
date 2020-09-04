@@ -12,9 +12,7 @@ package trabalho01_reconhecimento_de_padroes;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.text.DecimalFormat;
-import java.util.Scanner;
-import java.util.Random;
+
 
 public class Trabalho01_Reconhecimento_De_Padroes {
 
@@ -48,12 +46,12 @@ public class Trabalho01_Reconhecimento_De_Padroes {
         
         ler.close();
         
-        int linhas = Integer.parseInt(linha1);
-        int colunas = Integer.parseInt(linha2);
+        double linhas = Double.parseDouble(linha1);
+        double colunas = Double.parseDouble(linha2); 
         
-        float [][] m = new float[linhas] [colunas];
+        double[][] m = new double[linhas][colunas];
         
-        //String[] [] dados = [linha1.split(" ")] [linha2.split("\n")];
+        String[] dados = linha1.split(" ");
         
         for (int i = 0; i < m.length; i++) 
         {
